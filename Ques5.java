@@ -43,20 +43,27 @@ class Employee{
         return age;
     }
 
+    public String toString(){
+        return "This is "+first_name+" "+last_name+".I am working as "+designation+
+                ". And my age is "+age+".";
+    }
 
 
 }
 public class Ques5{
     public static void main(String[] args){
         Employee e1 = new Employee();
-        System.out.println("This is "+e1.getName()+".I am working as "+e1.getDesignation()+
-                ". And my age is "+e1.getAge()+".");
+//        System.out.println("This is "+e1.getName()+".I am working as "+e1.getDesignation()+
+//                ". And my age is "+e1.getAge()+".");
         Employee e2 = new Employee("Shivam","Kumar","Software-Engineer-AEM",22);
-        System.out.println("This is "+e2.getName()+".I am working as "+e2.getDesignation()+
-                ". And my age is "+e2.getAge()+".");
+//        System.out.println("This is "+e2.getName()+".I am working as "+e2.getDesignation()+
+//                ". And my age is "+e2.getAge()+".");
         Employee e3 = new Employee(e2);
-        System.out.println("This is "+e3.getName()+".I am working as "+e3.getDesignation()+
-                ". And my age is "+e3.getAge()+".");
+//        System.out.println("This is "+e3.getName()+".I am working as "+e3.getDesignation()+
+//                ". And my age is "+e3.getAge()+".");
+        System.out.println(e1.toString());
+        System.out.println(e2.toString());
+        System.out.println(e3.toString());
 //        System.out.println(e.getName());
 //        e.setName("Shubham","Kumar");
 //        System.out.println(e.getName());
